@@ -1,0 +1,219 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="20dp"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BiteMate"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have A Delicious Bite!"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#090909"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for dishes or restaurants"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0"
+        android:padding="10dp"
+        android:textColorHint="#808080"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Dishes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#4A4A4A"
+            android:background="#FFFFFF"/>
+
+        <!-- Horizontal Scroll for Featured Dishes -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_1" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_4" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_5" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/img_6" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="Pizza"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="Burgers"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Sandwich"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Cold Drinks"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <!-- Popular Dishes Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Dishes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#090909"
+        android:padding="10dp"/>
+
+     <ScrollView android:layout_height="match_parent"
+         android:layout_width="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+         <!-- Dish 1 -->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="10dp">
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:src="@drawable/img_7" />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_marginBottom="10dp">
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="150dp"
+             android:src="@drawable/img_8" />
+
+         </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginBottom="10dp">
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="150dp"
+                     android:src="@drawable/img_9" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginBottom="10dp"
+                 android:padding="10dp">
+
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="150dp"
+                     android:src="@drawable/img_12" />
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+     </ScrollView>
+
+
+    </LinearLayout>
